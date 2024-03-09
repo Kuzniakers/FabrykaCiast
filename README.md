@@ -14,7 +14,7 @@ Aby uruchomić projekt, potrzebujesz Visual Studio (lub innego IDE obsługujące
 
 1. Sklonuj repozytorium na swój lokalny komputer.
    
-2. Otwórz rozwiązanie w Visual Studio.
+2. Otwórz program w Visual Studio.
 
 3. Projekt gotowy do uploadowania nowych pozycji.
 
