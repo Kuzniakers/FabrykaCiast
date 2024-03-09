@@ -8,7 +8,7 @@ Konrad Kuźniak
 
 ## Rozpoczęcie pracy
 
-Aby uruchomić projekt, potrzebujesz Visual Studio (lub innego IDE obsługującego C#) oraz .NET 5.0.
+Aby uruchomić projekt, potrzebujesz Visual Studio (lub innego IDE obsługującego C#) oraz .NET 5.0 (tak, archaiczna wersja która była dostępna na IDE uniwesyteckiego komputera)
 
 ### Instalacja programu
 
