@@ -1,41 +1,43 @@
-# System Zarządzania Planem Pieczenia Ciast 
+# Cake Baking Schedule Management System
 
-Projekt wykonany w ramach praktycznych zajęć programowania zaawansowanego w języku C# na studiach. 
+This project was developed as part of the advanced programming course in C# during university studies.
 
-## Wykonał
+## Author
 
 Konrad Kuźniak
 
-## Rozpoczęcie pracy
+## Getting Started
 
-Aby uruchomić projekt, potrzebujesz Visual Studio (lub innego IDE obsługującego C#) oraz .NET 5.0 (tak, archaiczna wersja która była dostępna na IDE uniwesyteckiego komputera)
+To run the project, you need Visual Studio (or another IDE that supports C#) and .NET 5.0 (yes, an outdated version that was available on the university's computer IDE).
 
-### Instalacja programu
+### Installation
 
-1. Sklonuj repozytorium na swój lokalny komputer.
-   
-2. Otwórz program w Visual Studio.
+1. Clone the repository to your local machine.
 
-3. Projekt gotowy do uploadowania nowych pozycji.
+2. Open the project in Visual Studio.
 
-## Struktura projektu
+3. The project is ready to upload new entries.
 
-Projekt składa się z kilku kluczowych klas:
+---
 
-- `Ciasto`: Reprezentuje ciasto z nazwą, rodzajem i listą składników.
-- `IFabrykaCiasta`: Interfejs dla fabryk ciast.
-- `FabrykaCiastaCzekoladowego` / `FabrykaCiastaJablkowego`: Implementacje fabryk ciast.
-- `PlanPieczenia`: Główna klasa zarządzająca planem pieczenia ciast.
+## Project Structure
 
-## Przykład użycia
+The project consists of several key classes:
 
-Poniższy przykład pokazuje, jak dodać ciasto czekoladowe i jabłkowe do planu pieczenia oraz jak wyświetlić plan:
+- `Cake`: Represents a cake with a name, type, and a list of ingredients.
+- `ICakeFactory`: Interface for cake factories.
+- `ChocolateCakeFactory` / `AppleCakeFactory`: Implementations of the cake factories.
+- `BakingSchedule`: The main class that manages the cake baking schedule.
+
+---
+
+## Usage Example
+
+The following example demonstrates how to add a chocolate cake and an apple cake to the baking schedule and display the schedule:
 
 ```csharp
-var planPieczenia = new PlanPieczenia();
-planPieczenia.DodajCiasto(new FabrykaCiastaCzekoladowego());
-planPieczenia.DodajCiasto(new FabrykaCiastaJablkowego());
+var bakingSchedule = new BakingSchedule();
+bakingSchedule.AddCake(new ChocolateCakeFactory());
+bakingSchedule.AddCake(new AppleCakeFactory());
 
-planPieczenia.WyswietlPlan();
-
-
+bakingSchedule.DisplaySchedule();
